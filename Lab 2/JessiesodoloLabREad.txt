@@ -1,0 +1,17 @@
+Lab 2
+
+OpenWeatherAPI
+
+
+The OpenWeatherAPI had very good documentation so it made things easier to parse through, the most challenging
+thing about this lab was first user goggle dev tools to see what the JSON returned from the API call looked like.
+After seeing the data it was a matter of figuring out which pieces of information you wanted and how to abstract it.
+
+
+The 5hour weather data updated every 3 hours so I choose to display, the next 5 days and their temperatures in the
+morning, evening and afternoon. This was a simple way to display the data in a meaningful way. I know personally
+if i'm looking at the weather i'm focused more so on highs/lows and overall temperatures. The wind speed and pressure
+doesn't concern me too much.
+
+I still haven't found an adequate solution to creating spaces/tabs when creating a list item in javascript. 
+
