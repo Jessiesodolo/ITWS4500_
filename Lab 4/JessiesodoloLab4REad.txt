@@ -1,0 +1,11 @@
+Lab 4
+
+
+The main obstacle in this lab was just figuring out how Angular Js worked in terms of the application and the controller.
+Once I figured out how that worked, it was pretty simple to use angular. Angular made using the API data much easier
+and simpler than Jquery.
+
+
+For Media queries I had to separate list items and at a certain device with I displayed in list items in blocks. So 
+a user would scroll down their screen vertically opposed to horizontally across the screen. 
+
