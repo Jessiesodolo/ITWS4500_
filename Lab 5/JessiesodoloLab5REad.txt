@@ -1,0 +1,12 @@
+Lab 5
+Jessie Sodolo
+Web Science Development
+
+The main obstacle in this lab was adjusting to using node instead of PHP, node has many frameworks
+and modules it can get confusing at times. Then figuring out how to send request to and from
+your server.
+
+At times the interactions between Angular and node make it hard to draw the definitive line between
+frontend and backend. Some of the Angular errors were had to fix and understand as wel.
+
+I was able to get the stream to write to a file correctly I believe.

@@ -1,0 +1,11 @@
+{
+  "name": "index.js",
+  "version": "1.0.0",
+  "description": "This is a Lab to make API Calls to twitter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
