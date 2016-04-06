@@ -1,0 +1,17 @@
+Lab 6
+Jessie Sodolo
+Web Science Development
+
+The converting to CSV was pretty straightforward there was an npm module that helped me do that. I
+decided that through my angular controller would kept track of which option the user selected either
+"JSON" or "CSV" then on a post request I sent that to my server to then do the conversion.
+It was better to have the conversion on the node server's side because the heavier the load and
+bigger the file the more CPU the user would use, that could slow the user's computer down, opposed
+to the server taking a while to fully convert the file. 
+
+
+
+
+Download Links were then given to the user to get the fully exported files, I used a socket that would send messages
+from the server to the user on the status of the file and whether or not it existed. Every time the user clicked
+"Export" the socket would receive a message. 

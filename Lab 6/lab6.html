@@ -1,0 +1,77 @@
+<!Doctype html>
+<html>
+  <head>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="lab5.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+     
+  
+    <body ng-app="Tweetsl6" ng-controller="Tweets">
+
+   <div class="container">
+        <div class="row">
+             <div class="col-centered">
+              <div class="block">
+                <h1>Search your favorite tweets below</h1>
+                <h2> Downloads:</h2>
+                <a ng-show="loadlink" target="_self" download="{{file}}" href="store.txt">Download JSON File</a>
+                <a ng-show="loadlinks" target="_self" download="{{file2}}" href="convention-tweets.csv">Download CSV File</a>
+
+
+              </div>
+             
+            
+              <form>
+
+                  <fieldset class="form-group">
+                    Count: <input type="text" ng-model="cnt"  class="search-query rounded small">
+                   <input type="text" ng-model="srch" class="input-medium search-query rounded" placeholder="Search here">
+                   <button type="submit" class="btn btn-info btn-sm" ng-click="dosomething()">
+                    <span class="glyphicon glyphicon-search"></span>Search
+                  </button>
+                </fieldset>
+
+                <fieldset class="form-group">
+                  <select name="exporttype" ng-model="exporttype">
+                    <option value="js">JSON</option>
+                    <option value="csv">CSV</option>
+                  </select>
+                  <button type="submit" class="btn btn-info btn" ng-click="sendData()">Export</button>
+                </fieldset>
+              </form>
+            
+
+            </div>
+             
+              <div class="col-md-8 pull-left mainfeed">
+                <ul class="list-group" id="first">
+                  <li ng-repeat="val in allData | limitTo:cnt:-cnt" class="list-group-item" >{{ val.user.name}} <p>{{ val.text}}</p></li>
+                </ul>
+              </div>
+
+              <div class="col-md-2 secondfeed">
+                <ul class="list-group" id="second">
+                  <li ng-repeat="val in allData | limitTo:cnt:-cnt" class="list-group-item" ><p>{{ val.user.screen_name}}</p></li>
+                </ul>
+              </div>
+
+              
+
+
+        </div>
+
+
+      </div>
+    
+
+
+  </body>
+   <script src="/socket.io/socket.io.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="lab6.js"></script>
+
+
+  
+</html>
